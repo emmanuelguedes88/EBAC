@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Estar e Saúde</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <style>
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-title {
+            margin-bottom: 0.5rem;
+        }
+        .card-text {
+            flex-grow: 1;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Bem-Estar e Saúde</h1>
+        <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="/img/man-2264825_1280.jpg" alt="Imagem 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Corrida</h5>
+                        <p>Aumente sua resistência física e melhore sua capacidade pulmonar.</p>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="/img/woman-2592247_1280.jpg" alt="Imagem 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Musculação</h5>
+                        <p>Fortaleça seus músculos e melhore sua performance física.</p>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="/img/yoga-6723315_1280.jpg" alt="Imagem 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pilates</h5>
+                        <p style="color:red"><span>Melhore sua flexibilidade e equilíbrio com Pilates.</span></p>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" type="button" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" type="button" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                <div class="card h-100">
+                    <div class="card-header">
+                        Corrida
+                    </div>
+                    <img src="/img/card1.jpg" class="card-img-top" alt="Corrida">
+                    <div class="card-body">
+                        <h4 class="card-title">Melhora da saúde cardio-vascular</h4>
+                        <p class="card-text">A prática regular de corrida aumenta a resistência física, melhora a capacidade pulmonar e fortalece os músculos. Isso contribui para uma melhor performance em atividades cotidianas e outros esportes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                <div class="card h-100">
+                    <div class="card-header">
+                        Musculação
+                    </div>
+                    <img src="/img/card2.jpg" class="card-img-top" alt="Musculação">
+                    <div class="card-body">
+                        <h4 class="card-title">Melhoria da performance física</h4>
+                        <p class="card-text">O treino de musculação causa microlesões nas fibras musculares. Durante a recuperação, o corpo repara essas fibras, tornando-as maiores e mais fortes. Esse aumento no tamanho das fibras musculares é chamado de hipertrofia muscular.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                <div class="card h-100">
+                    <div class="card-header">
+                        Pilates
+                    </div>
+                    <img src="/img/woman-1854265_1280.jpg" class="card-img-top" alt="Pilates">
+                    <div class="card-body">
+                        <h4 class="card-title">Melhora da mobilidade</h4>
+                        <p class="card-text">A prática regular de pilates melhora a flexibilidade, fortalece o core e aumenta o equilíbrio. Isso contribui para uma postura melhor e previne lesões em atividades cotidianas e esportes. Além disso, alivia o estresse e promove o bem-estar geral.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
